@@ -26,9 +26,9 @@ app.post('/initiate-payment', async (req, res) => {
     total_amount: amount,
     currency: 'BDT',
     tran_id,
-    success_url: 'https://sslc.onrender.com/success',
-    fail_url: 'https://sslc.onrender.com/fail',
-    cancel_url: 'https://sslc.onrender.com/cancel',
+    success_url: 'https://aurmita.com/payment-result?tran_id=${tran_id}',
+    fail_url: 'https://aurmita.com/payment-result?tran_id=${tran_id}',
+    cancel_url: 'https://aurmita.com/payment-result?tran_id=${tran_id}l',
     ipn_url: 'https://sslc.onrender.com/ipn', // IPN endpoint
     cus_name: 'Customer',
     cus_email: email,
