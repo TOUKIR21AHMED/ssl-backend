@@ -27,9 +27,9 @@ app.post('/initiate-payment', async (req, res) => {
     currency: 'BDT',
     tran_id,
     // IMPORTANT: These URLs point to your server to update status and redirect properly
-    success_url: `http://localhost:3000/success?tran_id=${tran_id}`,
-    fail_url: `http://localhost:3000/fail?tran_id=${tran_id}`,
-    cancel_url: `http://localhost:3000/cancel?tran_id=${tran_id}`,
+    success_url: `https://aurmita.com/success?tran_id=${tran_id}`,
+    fail_url: `https://aurmita.com/fail?tran_id=${tran_id}`,
+    cancel_url: `https://aurmita.com/cancel?tran_id=${tran_id}`,
     ipn_url: 'https://sslc.onrender.com/ipn', // IPN endpoint for async updates (optional)
     cus_name: 'Customer',
     cus_email: email,
